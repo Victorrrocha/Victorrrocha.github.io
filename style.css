@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 70px;
+    min-height: 70px;
     background-color:white;
     position: fixed;
     left: 0;
@@ -25,6 +25,24 @@ header {
     justify-content: space-between;
     width: 90vw;
     margin: auto;
+    height: auto;
+}
+
+@media (max-width: 600px){
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        align-self: center;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+
 }
 
 h3{
@@ -61,7 +79,7 @@ nav li {
 .about-me-grid{
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 15px;
     justify-content: center;
 }
@@ -146,6 +164,21 @@ nav li {
     align-items: center;
 }
 
+@media (max-width: 600px) {
+    .skill-header{
+        flex-direction: column;
+    }
+    .skill-logo{
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    #skills{
+        padding-top: 120px;
+    }
+}
+
+
 .skill-logo img {
     margin-left: 10px;
     height: 40px;
@@ -193,17 +226,38 @@ nav li {
     border-radius: 100px;
 }
 
+
 .email-container p {
     font-size: 1.8em;
     margin: 15px;
 }
+
+
 
 .email-img {
     width: 40px;
     height: auto;
 }
 
+
+@media (max-width: 600px){
+    .email-container{
+        width: 100%;
+    }
+
+    .email-container p {
+        font-size: 1.5em;
+        margin: 10px;
+    }
+
+    .email-img {
+        width: 30px;
+        height: auto;
+    }
+}
+
 .social-media{
+    margin-top: 30px;
     width: 100px;
     display: flex;
     justify-content: space-between;
