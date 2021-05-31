@@ -167,6 +167,7 @@ nav li {
 @media (max-width: 600px) {
     .skill-header{
         flex-direction: column;
+        
     }
     .skill-logo{
         width: 80%;
